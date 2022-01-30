@@ -2,7 +2,7 @@
 module.exports = function(app) {
   var userList = require('../controller/userController');
 
-  // userList Routes
+  // user Routes
   app.route('/users')
     .get(userList.list_all_users)
     .post(userList.create_a_user);
