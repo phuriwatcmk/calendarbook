@@ -1,6 +1,6 @@
-'user strict';
+'use strict';
 var sql = require('./db.js');
-
+v = i;
 //User object constructor
 var User = function(user){
     this.user_id = user.userId,
