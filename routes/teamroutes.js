@@ -4,11 +4,11 @@ module.exports = function(app) {
 
   // user Routes
   app.route('/teams')
-    .get(userList.list_all_teams)
-    .post(userList.create_a_team);
+    .get(teamList.list_all_teams)
+    .post(teamList.create_a_team);
    
    app.route('/team/:user_id')
-    .get(userList.read_a_team)
-    .put(userList.update_a_team)
-    .delete(userList.delete_a_team);
+    .get(teamList.read_a_team)
+    .put(teamList.update_a_team)
+    .delete(teamList.delete_a_team);
     };
